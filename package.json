@@ -1,11 +1,11 @@
 {
   "name": "react-native-datetime",
   "version": "0.1.2",
-  "description": "A datetime-picker for react-native support for android and ios",
+  "description": "A datetime-picker for react-native support for android and ios, fixed react-native-datetime",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cnjon/react-native-datetime.git"
+    "url": "git+https://github.com/shaoyun/react-native-datetime-picker-universal.git"
   },
   "keywords": [
     "react-component",
@@ -17,11 +17,11 @@
     "datetime"
   ],
   "author": {
-    "name": "cnjon",
-    "url": "https://github.com/cnjon"
+    "name": "shaoyun",
+    "url": "https://github.com/shaoyun"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cnjon/react-native-datetime/issues"
+    "url": "https://github.com/shaoyun/react-native-datetime-picker-universal/issues"
   }
 }
