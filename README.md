@@ -1,9 +1,14 @@
+
 # React Native DateTime
 A datetime-picker for react-native support for android and ios(base on @remobile/react-native-datetime-picker)
 
+## 中文说明
+
+修改高版本RN集成的问题，修正IOS下不显示的问题
+
 ## Installation
 ```sh
-npm install react-native-datetime --save
+npm install react-native-datetime-picker-universal --save
 ```
 
 ### Installation (iOS)
@@ -13,8 +18,8 @@ npm install react-native-datetime --save
 * In `android/settings.gradle`
 ```gradle
 ...
-include ':react-native-datetime'
-project(':react-native-datetime').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-datetime/android')
+include ':react-native-datetime-picker-universal'
+project(':react-native-datetime-picker-universal').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-datetime-picker-universal/android')
 ```
 
 * In `android/app/build.gradle`
@@ -23,7 +28,7 @@ project(':react-native-datetime').projectDir = new File(rootProject.projectDir, 
 ...
 dependencies {
     ...
-    compile project(':react-native-datetime')
+    compile project(':react-native-datetime-picker-universal')
 }
 ```
 
@@ -43,7 +48,7 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-        new RCTDateTimePickerPackage(this), // <------ add here
+        new RCTDateTimePickerPackage(), // <------ add here
         new MainReactPackage());
     }
 }
@@ -65,7 +70,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
       .setBundleAssetName("index.android.bundle")
       .setJSMainModuleName("index.android")
       .addPackage(new MainReactPackage())
-      .addPackage(new RCTDateTimePickerPackage(this))              // <------ add here
+      .addPackage(new RCTDateTimePickerPackage())              // <------ add here
       .setUseDeveloperSupport(BuildConfig.DEBUG)
       .setInitialLifecycleState(LifecycleState.RESUMED)
       .build();
@@ -82,11 +87,11 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 ### Screencasts
 * ios
 <br>
-![image](https://github.com/cnjon/react-native-datetime/blob/master/screencasts/ios/4.png)
+![image](https://github.com/shaoyun/react-native-datetime-picker-universal/blob/master/screencasts/ios/4.png)
 <br>
 * android
 <br>
-![image](https://github.com/cnjon/react-native-datetime/blob/master/screencasts/android/3.png)
+![image](https://github.com/shaoyun/react-native-datetime-picker-universal/blob/master/screencasts/android/3.png)
 
 ## Usage
 use as follows:
@@ -111,7 +116,7 @@ var {
     Text,
 } = React;
 
-var DateTimePicker = require('react-native-datetime').default;
+var DateTimePicker = require('react-native-datetime-picker-universal').default;
 var Button = require('@remobile/react-native-simple-button');
 
 module.exports = React.createClass({

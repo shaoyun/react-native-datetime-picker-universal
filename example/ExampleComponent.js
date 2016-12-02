@@ -10,7 +10,7 @@ import {
     View
 } from 'react-native';
 
-import DateTimePicker from 'react-native-datetime';
+import DateTimePicker from 'react-native-datetime-picker-universal';
 
 export default class ExampleComponent extends Component {
     constructor(props) {
